@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de programação com js</title>
+    <style>
+        body {
+            background-color: #302828;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lógica de programação com js</h1>
+
+    <script>
+        //fazer jogador 1 digitar um numero
+        var jogador1 = parseFloat(prompt('Digite um número jogador 1: '));
+        //fazer jogador 2 digitar outro numero 
+        var jogador2 = parseFloat(prompt('Digite outro número jogador 2: '));
+        //se forem iguais, mostrar mensagem 'empate'
+        if(jogador1===jogador2) {
+            alert('EMPATE'); 
+        } else {
+        //sortear um numero entre 0 e 1
+
+        //se o numero sorteado for 0, ganha quem escolher o numero MENOR
+
+        //se o numero sorteado for 1, ganha quem escolher o numero MAIOR
+            var sorteio = parseInt(Math.random() * 2);
+            
+            if(sorteio===0){
+                if(jogador1 < jogador2) {
+                    alert('Jogador 1 ganhou');
+                } else {
+                    alert('Jogador 2 ganhou');
+                }
+            } else {
+                if(jogador1 > jogador2) {
+                    alert('Jogador 1 ganhou');
+                } else {
+                    alert('Jogador 2 ganhou');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
